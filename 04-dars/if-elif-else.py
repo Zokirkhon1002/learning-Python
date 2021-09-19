@@ -1,135 +1,161 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Sep 18 10:22:18 2021
+Created on Sat Sep 19 13:54:22 2021
 
 @author: Zokirkhon
 """
 
-# avtolar = ['audi', 'bmw', 'volvo', 'kia', 'hyundai', 'toyoto']
-
-# for avto in avtolar:
-#     if avto == 'bmw':
-#         print(avto.upper())
-#     else:
-#         print(avto.title())
 
 
-# ism = "Ali"
-
-# print(ism.lower() == 'ali')
-
-
-# ism = input("Ismingiz nima? \n>>> ")
-# if ism.lower() != 'zokirkhon':
-#     print(f"Uzr, {ism.title()} biz Zokirkhonni kutyapmiz.")
+# son = -50
+# if son < 0:
+#     print("Manfiy Son")
 # else:
-#     print(f"Salom {ism.title()}")
+#     print("Musbatson")
 
 
 
-# javob = float(input("12x6 nechchiga teng?\n>>> "))
-# if javob != 72:
-#     print("Javob xato!")
 
-
-# yosh = int(input("yoshingiz nechchida?\n>>> "))
-# if yosh >= 18:
-#     print("Xush kelibsiz!")
-# else:
-#     print("Kirish mumkin emas!")
-
-
-
-# login = input("Yangi login tanlang:\n>>> ")
-# if len(login) <= 5:
-#     print("login 5 harfdan ko'proq bo'lishi shart!")
-
-
-from datetime import date
-todays_date = date.today()
-
-yearNow = todays_date.year
-monthNow = todays_date.month
-dayNow = todays_date.day
-
-
-# yil = int(input("Tug'ilgan yilingizni kiriting iltimos\n>>> "))
-# if yearNow-yil<18:
-#     print(f"yoshingiz {yearNow-yil}da ekan.")
-#     print("Kirish mumkin emas!")
-# else:
-#     print("Xush kelibsiz!")
 
 
 
 # yosh = int(input("Yoshingiz nechchida?\n>>> "))
-# if yosh>65: print("Siz COVID-19 risk guruhida ekansiz")
-
-
-
-# x, y = 70, 50
-# print("x katta y dan") if x>y else print("y katta x dan")
-
-
-
-
-#Amaliyot qismi
-#Uyga Vazifa
-
-
-# #1
-# cars = ['toyota', 'mazda', 'hyundai', 'gm', 'kia']
-# for car in cars:
-#     if car != 'gm':
-#         print(car.title())
-#     else:
-#         print(car.upper())
-
-
-# #2
-# for car in cars:
-#     if car == 'gm':
-#         print(car.upper())
-#     else:
-#         print(car.title())
-
-
-
-# #3
-# name = input("Iltimos, ismingizni kiriting\n>>> ");
-# if name.lower() == 'admin':
-#     print(f"Xush kelibsiz, {name.title()}. Foydalanuvchilar ro'yxatini ko'rasizmi?")
+# if yosh<=4:
+#     narh = 0
+# elif yosh<=12:
+#     narh = 5_000
+# elif yosh<=18:
+#     narh = 8_000
 # else:
-#     print(f"Xush kelibsiz, {name.title()}.")
+#     narh = 10_000
+# print(f"Sizga kirish {narh} so'm.")
 
 
 
 
-# #4
-# print("Foydalanuvchi iltimos 2ta son kiriting:")
-# x = int(input("1-sonni kiriting\n>>> "))
-# y = int(input("2-sonni kiriting\n>>> "))
-# if x==y: print(f"siz kiritgan sonlar teng ekan. {x}=={y}")
 
 
-
-# #5
-# x = int(input("Iltimos biror son kiriting\n>>> "))
-# if x<0:
-#     print(f"siz kiritgan {x} Manfiy son ekan")
+# kun = input("Bugun nima kun?\n>>> ")
+# if kun.lower() == 'shanba' or kun.lower() == 'yakshanba':
+#     print("Bugun dam olish kuni")
 # else:
-#     print(f"siz kiritgan {x} Musbat son ekan")
+#     print("Bugun ish kuni")
 
 
-import math
 
 
-# #6
-# x = float(input("Iltimos biror son kiriting\n>>> "))
-# if x>=0:
-#     print(f"siz kiritgan sonning ildizi: {math.sqrt(x)}")
+
+
+# kun = input("Bugun nima kun?\n>>> ")
+# harorat = float(input("Havo harorati qanday?\n>>> "))
+
+# if kun.lower() == 'yakshanba' and harorat>=30:
+#     print("Cho'milgani ketdik")
+# elif kun.lower() == 'yakshanba' and harorat<30:
+#     print("Uyda dam olamiz")
+
+
+
+
+
+
+
+
+
+kun = input("Bugun nima kun?\n>>> ")
+harorat = float(input("Havo harorati qanday?\n>>> "))
+
+
+if (kun.lower() == 'shanba' or kun.lower() == 'yakshanba') and harorat>=30:
+    print("Cho'milgani ketdik")
+elif (kun.lower() == 'shanba' or kun.lower() == 'yakshanba') and harorat<30:
+    print("Uyda dam olamiz")
+
+
+
+
+
+
+
+# narh = 15_000
+# choy = True
+# salat = True
+
+# if choy and salat:
+#     narh += 10_000
+# elif choy or salat:
+#     narh += 5000
+# print(f"Jami {narh} so'm")
+
+
+
+
+
+
+
+
+# narh = 15_000
+# choy = 1 # True
+# salat = 0 # False
+# non = 1 # True
+# kampot = 1 # True
+# assorti = 0 # False
+
+
+# if choy:
+#     print("Mijoz choy oldi")
+#     narh += 3_000
+# if salat:
+#     print("Mijoz salat oldi")
+#     narh += 5_000
+# if non:
+#     print("Mijoz non oldi")
+#     narh += 2_000
+# if kampot:
+#     print("Mijoz kampot oldi")
+#     narh += 5_000
+# if assorti:
+#     print("Mijoz assorti oldi")
+#     narh += 15_000
+# print(f"Jami {narh} so'm")
+
+
+
+
+
+
+
+
+# menu = ['osh', 'qozonkabob', 'shashlik', 'norin', 'somsa', 'bishteks', 'achchiqgo\'st', 'tushonka', 'honim', 'tiftel']
+
+# result = 'manti' in menu
+# result = 'somsa' in menu
+# print(result)
+# # not in teskari vazifani bajaradi
+
+# ovqat = input("Nima ovqat yeysiz?\n>>> ").lower()
+# if ovqat not in menu:
+#     print("Afsuski bizda bunday ovqat yo'q")
 # else:
-#     print("Iltimos Musbat son kiriting.")
+#     print("Buyurtmangiz qabul qilindi")
+
+
+
+
+
+
+
+# menu = ['osh', 'qozonkabob', 'shashlik', 'norin', 'somsa']
+# buyurtmalar = ['osh', 'achchiqgo\'st', 'norin', 'honim', 'somsa']
+
+# if buyurtmalar:
+#     for taom in buyurtmalar:
+#         if taom in menu:
+#             print(f"Menuda {taom} bor")
+#         else:
+#             print(f"Kechirasiz, menuda {taom} yo'q.")
+# else:
+#     print("ro'yxat bo'sh")
 
 
 
@@ -138,6 +164,42 @@ import math
 
 
 
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
