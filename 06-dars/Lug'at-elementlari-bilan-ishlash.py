@@ -158,30 +158,30 @@ Created on Wed Sep 22 22:41:21 2021
 #     print(f"{k.upper()}: \t {v} degan ma'nosi bor")
 
 
-# capital_of_country = {
-# "india":"delhi",
-# "nepal":"kathmandu",
-# "pakistan":"islamabad",
-# "russia":"moscow",
-# "china":"peikng",
-# "afghanistan":"kabul",
-# 'japan': 'tokyo',
-# 'belgium':'brussels',
-# 'france':'paris',
-# 'germany':'berlin',
-# 'italy':'rome',
-# 'poland':'warsaw',
-# 'australia': 'canberra',
-# 'england': 'london',
-# 'south africa':'pretoria',
-# 'uzbekistan':'tashkent',
-# "united arab emirates":"abu dhabi",
-# 'turkey':'istanbul',
-# "malaysia":"kuala Lumpur",
-# "indonesia":"jakarta",
-# "south Korea":"seoul",
-# "united States":"washington"
-#     }
+capital_of_country = {
+"india":"delhi",
+"nepal":"kathmandu",
+"pakistan":"islamabad",
+"russia":"moscow",
+"china":"peikng",
+"afghanistan":"kabul",
+'japan': 'tokyo',
+'belgium':'brussels',
+'france':'paris',
+'germany':'berlin',
+'italy':'rome',
+'poland':'warsaw',
+'australia': 'canberra',
+'england': 'london',
+'south africa':'pretoria',
+'uzbekistan':'tashkent',
+"united arab emirates":"abu dhabi",
+'turkey':'istanbul',
+"malaysia":"kuala Lumpur",
+"indonesia":"jakarta",
+"south Korea":"seoul",
+"united States":"washington"
+    }
 
 
 
@@ -207,7 +207,7 @@ Created on Wed Sep 22 22:41:21 2021
 
 
 
-# name = input("Please enter country name or capital of country\n>>> ").lower()
+name = input("Please enter country name or capital of country\n>>> ").lower()
 
 
 
@@ -218,51 +218,52 @@ Created on Wed Sep 22 22:41:21 2021
 # elif result == None:
 #     print(f'Kechirasiz, bizda bunday {name.title()} nomli ma\'lumot yo\'q') 
 
+natija = ''
 
-# if len(name):
-#     for k,v in capital_of_country.items():
-#         if name == v:
-#             print(f"{k.upper()} ning poytaxti: {name.upper()}")
-#         elif name == k:
-#             print(f"{name.upper()} ning poytaxti: {v.upper()}")
-#         elif not name in capital_of_country.keys() and not name in capital_of_country.values():
-#             natija = f"Kechirasiz, bizda bunday {name.title()} nomli ma\'lumot yo\'q"
-#     print(natija)
-
-
-
-
-menu = {
-        "osh":15_000,
-        "mastava":10_000,
-        "bishteks":11_000,
-        "achchiq go'sht":14_000,
-        "manti":12_000,
-        "shashlik":8_000,
-        "qozon kabob":13_000,
-        "tushonka":16_000,
-        "shorva":7_000,
-        "chuchvara":12_000,
-        "tiftel":9_000
-        }
+if len(name):
+    for k,v in capital_of_country.items():
+        if name == v:
+            print(f"{k.upper()} ning poytaxti: {name.upper()}")
+        elif name == k:
+            print(f"{name.upper()} ning poytaxti: {v.upper()}")
+        elif not name in capital_of_country.keys() and not name in capital_of_country.values():
+            natija = f"Kechirasiz, bizda bunday {name.title()} nomli ma\'lumot yo\'q"
+    print(natija)
 
 
-input_menu = []
-print("istagan 3ta taom nomini kiriting:")
-for i in range(3):
-    taom = input(f"{i+1}-taomning nomini kiriting:\n>>> ").lower()
-    input_menu.append(taom)
 
-for each in menu:
-    if each in input_menu:
-        print(f"{each.title()} ning narhi: {menu[each]} so'm")
+
+# menu = {
+#         "osh":15_000,
+#         "mastava":10_000,
+#         "bishteks":11_000,
+#         "achchiq go'sht":14_000,
+#         "manti":12_000,
+#         "shashlik":8_000,
+#         "qozon kabob":13_000,
+#         "tushonka":16_000,
+#         "shorva":7_000,
+#         "chuchvara":12_000,
+#         "tiftel":9_000
+#         }
+
+
+# input_menu = []
+# print("istagan 3ta taom nomini kiriting:")
+# for i in range(3):
+#     taom = input(f"{i+1}-taomning nomini kiriting:\n>>> ").lower()
+#     input_menu.append(taom)
+
+# for each in menu:
+#     if each in input_menu:
+#         print(f"{each.title()} ning narhi: {menu[each]} so'm")
     # else:
     #     print(f"\nbizda bunday {each.title()} yo\'q.")
     # bu yerga yozsak, bor ovqatlarning orasiga tushib qolar ekan
         
-for each in input_menu:
-    if each not in menu:
-        print(f"\nbizda bunday {each.title()} yo\'q.")
+# for each in input_menu:
+#     if each not in menu:
+#         print(f"\nbizda bunday {each.title()} yo\'q.")
 
 
 
