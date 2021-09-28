@@ -315,7 +315,7 @@ davlatlar = {
     "o\'zbekiston":{"poytaxti": "toshkent",
                    'maydon':448978,
                    'aholisi':35_111_000,
-                   'pul_birligi': 'so\'m'
+                   'pul_birligi': "so'm"
                    },
     "malayziya":{"poytaxti": "kuala lampur",
                    'maydon':329750,
@@ -346,32 +346,35 @@ davlatlar = {
 
 # # #5
 d_name = input("Davlat nomini yoki poytaxt nomini yoki pul birligini kiriting\n>>> ").lower()
-natija = ''
+x=0
 if len(d_name):
     for davlat,info in davlatlar.items():
         if d_name == davlat:
+            x+=1
             print(f"{davlat.upper()} ning poytaxti: {info['poytaxti']},"
                   f"\n maydoni: {info['maydon']},"
                   f"\n aholisi: {info['aholisi']},"
                   f"\n va pul birligi: {info['pul_birligi']}")
         elif d_name == info['poytaxti']:
+            x+=1
             print(f"{davlat.upper()} ning poytaxti: {info['poytaxti']},"
                   f"\n maydoni: {info['maydon']},"
                   f"\n aholisi: {info['aholisi']},"
                   f"\n va pul birligi: {info['pul_birligi']}")
         elif d_name == info['pul_birligi']:
+            x+=1
             print(f"{davlat.upper()} ning poytaxti: {info['poytaxti']},"
                   f"\n maydoni: {info['maydon']},"
                   f"\n aholisi: {info['aholisi']},"
-                  f"\n va pul birfoligi: {info['pul_birligi']}")
-        # for name, value in info.items():
-        #     temporery = ''
-        #     if type(info[name]) == str():
-        #         temporery = info[name]
-        #         if not d_name in davlatlar.keys() and not d_name in temporery:
-        #             natija = f"Uzr bizdan {d_name.title()} nomi davlat haqida ma'lumot yo'q."
-            
-    print(natija)
+                  f"\n va pul birligi: {info['pul_birligi']}")
+
+if x == 0:
+    print(f"Uzr bizdan {d_name.title()} nom haqida ma'lumot yo'q.")
+
+
+
+
+
 
 
 
