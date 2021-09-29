@@ -158,20 +158,71 @@ Created on Mon Sep 27 18:50:49 2021
 # # Amaliyot
 # # Uyga vazifa
 
+# # #1
+# savol = "Iltimos ismingizni kiriting\n>>> ";
+# ism = input(savol)
+# liked_books = []
+# while True:
+#     savol = f"Assalomu alaykum {ism.title()}, yaxshi ko'rgan kitoblaringizni nomini kiriting\n"
+#     savol += f"{ism.title()}, Eslatma!  agar stop so'zini yozsangiz, dastur to'xtaydi\n>>> "
+#     qiymat = input(savol)
+#     if qiymat == "stop":
+#         break
+#     else:
+#         liked_books.append(qiymat)
 
-savol = "Iltimos ismingizni kiriting\n>>> ";
-ism = input(savol)
-liked_books = []
+# print(f"siz yaxshi ko'rgan kitoblar ro'yxati:\n {liked_books}")
+
+
+
+
+
+
+# # #2
+# ism = input("Iltimos ismingizni kiriting:\n>>> ")
+# savol = f"Assalomu alaykum {ism}, Muzeyga xush kelibsiz!\n"
+# savol += f"{ism.title()}, Eslatma! exit yoki quit so'zini kiritsangiz dastut to'xtaydi."
+# information = {}
+# result = ''
+# while True:
+#     print(savol)
+#     qiymat = input(f"{ism.title()}, Iltimos yoshingizni kiriting:\n>>> ")
+#     if qiymat == 'exit' or qiymat == 'quit':
+#         break
+#     else:
+#         qiymat = int(qiymat)
+#         if qiymat < 7:
+#             result = "siz uchun Muzeyga kirish 2 000 so'm bo'ladi.\n\n"
+#         elif qiymat >= 65:
+#             result = "siz ga kirish bepul"
+#         elif qiymat >= 7 and qiymat < 18:
+#             result = "siz uchun Muzeyga kirish 3 000 so'm bo'ladi.\n\n"
+#         elif qiymat >= 18 and qiymat < 65:
+#             result = "siz uchun Muzeyga kirish 10 000 so'm bo'ladi.\n\n"
+#         print(result)
+# print('dastur to\'xtatildi!')
+
+
+
+
+# # #3
+savol ="Kiritilgan sonning ildizini qaytaruvchi dastur.\n"
+savol += "Musbat son kiriting "
+savol += "(dasturni to'xtatish uchun 'exit' deb yozing):\n>>> "
+
 while True:
-    savol = f"Assalomu alaykum {ism.title()}, yaxshi ko'rgan kitoblaringizni nomini kiriting\n"
-    savol += f"{ism.title()}, Eslatma!  agar stop so'zini yozsangiz, dastur to'xtaydi\n>>> "
     qiymat = input(savol)
-    if qiymat == "stop":
+    if qiymat.lower() =='exit':
         break
+    elif int(qiymat)<0:
+        continue
+    elif int(qiymat)<0:
+        print("Iltimos musbat son kiriting")
     else:
-        liked_books.append(qiymat)
+        ildiz = float(qiymat)**(0.5)
+        print(f"{qiymat} ning ildizi {ildiz} ga teng")
 
-print(f"siz yaxshi ko'rgan kitoblar ro'yxati:\n {liked_books}")
+
     
 
 
