@@ -307,15 +307,15 @@ def Fiboanchi_qaytar(n):
 
 
 ##6.3
-# def Fiboanchi_qaytar(n):
-#     """nta fibochi sonlarni qaytaradi"""
-#     fibochi_sonlar = []
-#     for i in range(n):
-#         if i<=1:
-#             fibochi_sonlar.append(1)
-#         else:
-#             fibochi_sonlar.append(fibochi_sonlar[i-1]+fibochi_sonlar[i-2])
-#     return fibochi_sonlar
+def Fiboanchi_qaytar(n):
+    """nta fibochi sonlarni qaytaradi"""
+    fibochi_sonlar = []
+    for i in range(n):
+        if i<=1:
+            fibochi_sonlar.append(1)
+        else:
+            fibochi_sonlar.append(fibochi_sonlar[i-1]+fibochi_sonlar[i-2])
+    return fibochi_sonlar
 
 
 n = int(input("son kiriting: "))
