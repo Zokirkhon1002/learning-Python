@@ -89,42 +89,42 @@ Created on Mon Oct  4 23:52:46 2021
 
 
 # # #5
-# def avto_info(kompaniya, model, rangi, karobka, yili, narhi=None):
-#     """Mashina ma'lumotlarini qaytarib beruvchi funksiya"""
-#     avto = {"kompaniya": kompaniya,
-#             "model": model,
-#             "rang": rangi,
-#             "karobka": karobka,
-#             "yili": yili,
-#             "narhi":narhi}
-#     return avto;
+def avto_info(kompaniya, model, rangi, karobka, yili, narhi=None):
+    """Mashina ma'lumotlarini qaytarib beruvchi funksiya"""
+    avto = {"kompaniya": kompaniya,
+            "model": model,
+            "rang": rangi,
+            "karobka": karobka,
+            "yili": yili,
+            "narhi":narhi}
+    return avto;
 
-# print("Saytimizdagi avtolar ro'yxatini shakllantiramiz")
-# avtolar = [];
-# while True:
-#     print("\nQuyidagi ma'lumotlarni kiriting", end=" ")
-#     kompaniya=input("Ishlab chiqaruvchi: ")
-#     model=input("Modeli: ")
-#     rangi=input("Rangi: ")
-#     karobka=input("Karobka: ")
-#     yili=input("Ishlab chiqarilgan yili: ")
-#     narhi=input("Narhi: ")
-#     # Foydalanuvchi kiritgan ma'lumotlardan avto_info yordamida
-#     # lug'at shakllantirib, har bir lug'atni ro'yxatga qo'shamiz:
-#     avtolar.append(avto_info(kompaniya, model, rangi, karobka, yili, narhi))
-#     # Yana avto qo'shish-qo'shmaslikni so'raymiz
-#     javob = input("yana avto qo'shasizmi? (yes/no): ")
-#     if javob == 'no':
-#         break
+print("Saytimizdagi avtolar ro'yxatini shakllantiramiz")
+avtolar = [];
+while True:
+    print("\nQuyidagi ma'lumotlarni kiriting", end=" ")
+    kompaniya=input("Ishlab chiqaruvchi: ")
+    model=input("Modeli: ")
+    rangi=input("Rangi: ")
+    karobka=input("Karobka: ")
+    yili=input("Ishlab chiqarilgan yili: ")
+    narhi=input("Narhi: ")
+    # Foydalanuvchi kiritgan ma'lumotlardan avto_info yordamida
+    # lug'at shakllantirib, har bir lug'atni ro'yxatga qo'shamiz:
+    avtolar.append(avto_info(kompaniya, model, rangi, karobka, yili, narhi))
+    # Yana avto qo'shish-qo'shmaslikni so'raymiz
+    javob = input("yana avto qo'shasizmi? (yes/no): ")
+    if javob == 'no':
+        break
 
 
-# print("\nSaloningizdagi avtolar:")
-# for avto in avtolar:
-#     if avto['narhi']:
-#         narh = avto['narhi']
-#     else:
-#         narh = 'Noma\'lum'
-#     print(f"{avto['rang'].title()}, {avto['model'].title()}, {avto['karobka'].title()} karobka. Narhi: {narh}")
+print("\nSaloningizdagi avtolar:")
+for avto in avtolar:
+    if avto['narhi']:
+        narh = avto['narhi']
+    else:
+        narh = 'Noma\'lum'
+    print(f"{avto['rang'].title()}, {avto['model'].title()}, {avto['karobka'].title()} karobka. Narhi: {narh}$")
 
 
 
@@ -279,19 +279,19 @@ Created on Mon Oct  4 23:52:46 2021
 ###6
 
 ##6.1
-def Fiboanchi_qaytar(n):
-    """nta fibochi sonlarni qaytaradi"""
-    a = 1
-    b = 0
-    vaqtincha = 0
-    fibochi_sonlar = []
-    while n>=0:
-        vaqtincha = a;
-        a = a+b;
-        b = vaqtincha;
-        fibochi_sonlar.append(b)
-        n-=1
-    return fibochi_sonlar;
+# def Fiboanchi_qaytar(n):
+#     """nta fibochi sonlarni qaytaradi"""
+#     a = 1
+#     b = 0
+#     vaqtincha = 0
+#     fibochi_sonlar = []
+#     while n>=0:
+#         vaqtincha = a;
+#         a = a+b;
+#         b = vaqtincha;
+#         fibochi_sonlar.append(b)
+#         n-=1
+#     return fibochi_sonlar;
 
 
 
@@ -307,19 +307,19 @@ def Fiboanchi_qaytar(n):
 
 
 ##6.3
-def Fiboanchi_qaytar(n):
-    """nta fibochi sonlarni qaytaradi"""
-    fibochi_sonlar = []
-    for i in range(n):
-        if i<=1:
-            fibochi_sonlar.append(1)
-        else:
-            fibochi_sonlar.append(fibochi_sonlar[i-1]+fibochi_sonlar[i-2])
-    return fibochi_sonlar
+# def Fiboanchi_qaytar(n):
+#     """nta fibochi sonlarni qaytaradi"""
+#     fibochi_sonlar = []
+#     for i in range(n):
+#         if i<=1:
+#             fibochi_sonlar.append(1)
+#         else:
+#             fibochi_sonlar.append(fibochi_sonlar[i-1]+fibochi_sonlar[i-2])
+#     return fibochi_sonlar
 
 
-n = int(input("son kiriting: "))
-print(Fiboanchi_qaytar(n))
+# n = int(input("son kiriting: "))
+# print(Fiboanchi_qaytar(n))
 # print(sonlar)
 
 
