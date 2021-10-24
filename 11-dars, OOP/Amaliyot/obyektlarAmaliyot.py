@@ -68,7 +68,7 @@ mashina4 = Avto("Gentra","Gray",18_000,"Chevrolet","Uzbekistan")
 # mashina2.update_km(500)
 # mashina3.update_km(400)
 # mashina4.update_km(1100)
-print(mashina4.get_info())
+# print(mashina4.get_info())
 
 
 
