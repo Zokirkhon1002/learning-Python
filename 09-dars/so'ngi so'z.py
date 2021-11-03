@@ -118,7 +118,8 @@ import random as r
 
 
 
-
+a=list(map(int,input("Enter some numbers: ").split()))
+print(a)
 
 
 
