@@ -1,0 +1,45 @@
+import unittest
+from hm4 import isFibonacci
+
+class TestIsFibonacci(unittest.TestCase):
+    def test_is_fibonacci_true(self):
+        self.assertTrue(isFibonacci(1))
+        self.assertTrue(isFibonacci(2))
+        self.assertTrue(isFibonacci(3))
+        self.assertTrue(isFibonacci(5))
+        self.assertTrue(isFibonacci(8))
+        self.assertTrue(isFibonacci(13))
+        self.assertTrue(isFibonacci(21))
+        self.assertTrue(isFibonacci(34))
+    
+    def test_is_fibonacci_false(self):
+        self.assertFalse(isFibonacci(4))
+        self.assertFalse(isFibonacci(6))
+        self.assertFalse(isFibonacci(7))
+        self.assertFalse(isFibonacci(9))
+        self.assertFalse(isFibonacci(10))
+        self.assertFalse(isFibonacci(11))
+        self.assertFalse(isFibonacci(12))
+        self.assertFalse(isFibonacci(14))
+        self.assertFalse(isFibonacci(15))
+        self.assertFalse(isFibonacci(16))
+        self.assertFalse(isFibonacci(17))
+        self.assertFalse(isFibonacci(18))
+        self.assertFalse(isFibonacci(19))
+        self.assertFalse(isFibonacci(20))
+        self.assertFalse(isFibonacci(22))
+        self.assertFalse(isFibonacci(23))
+        self.assertFalse(isFibonacci(24))
+        self.assertFalse(isFibonacci(25))
+        self.assertFalse(isFibonacci(26))
+        self.assertFalse(isFibonacci(27))
+        self.assertFalse(isFibonacci(28))
+        self.assertFalse(isFibonacci(29))
+        self.assertFalse(isFibonacci(30))
+        self.assertFalse(isFibonacci(31))
+        self.assertFalse(isFibonacci(32))
+        self.assertFalse(isFibonacci(33))
+        self.assertFalse(isFibonacci(35))
+        self.assertFalse(isFibonacci(36))
+
+unittest.main()
